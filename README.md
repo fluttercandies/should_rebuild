@@ -9,6 +9,13 @@ A widget can prevent Widget unnecessary rebuild.
 dependencies:
   should_rebuild: 0.0.1  #latest version
 ```
+Or
+```yaml
+dependencies:
+  should_rebuild:
+      git:
+        url: https://github.com/fantasy525/should_rebuild
+```
 ## Super simple to use
 
 ```dart
