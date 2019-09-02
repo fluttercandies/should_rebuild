@@ -7,7 +7,7 @@ ShouldRebuild is a Widget that can prevent Widget rebuilding.
 ### Add dependency
 ```yaml
 dependencies:
-  dio: 0.0.1  #latest version
+  should_rebuild: 0.0.1  #latest version
 ```
 ## Super simple to use
 
