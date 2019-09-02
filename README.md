@@ -1,14 +1,37 @@
-# should_rebuild_widget
+# ShouldRebuild
 
-A new Flutter package project.
+[![Star this Repo](https://img.shields.io/github/stars/fantasy525/should_rebuild)](https://github.com/fantasy525/should_rebuild)
 
-## Getting Started
+ShouldRebuild is a Widget that can prevent Widget rebuilding.
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+### Add dependency
+```yaml
+dependencies:
+  dio: 0.0.1  #latest version
+```
+## Super simple to use
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```dart
+ShouldRebuild<Todo>(
+    shouldRebuild: (oldWidget, newWidget) => oldWidget.counter != newWidget.counter,
+    builder: () => Todo(counter: counter,),
+),
+```
+Todo Widget
+```dart
+class Todo extends StatelessWidget {
+  final int counter;
+  Todo({this.counter});
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text(counter.toString()),
+    );
+  }
+}
+```
+The Todo widget only rebuilds if counter changes
+
+ShouldeRebuild Widget is a generic StatefulWidget,this generic represents the type of Widget returned by the builder method
+
+
