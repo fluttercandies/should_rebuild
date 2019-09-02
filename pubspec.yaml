@@ -1,7 +1,7 @@
 name: should_rebuild
 description: A widget can prevent Widget unnecessary rebuild.
 version: 0.0.1
-author: fantasy525
+author: 1056726491@qq.com
 homepage: https://github.com/fantasy525/should_rebuild
 
 environment:
