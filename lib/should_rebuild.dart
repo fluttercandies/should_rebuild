@@ -2,15 +2,13 @@ library should_rebuild_widget;
 
 import 'package:flutter/material.dart';
 
-typedef WidgetBuilder<T> = T Function();
-
 typedef ShouldRebuildFunction<T> = bool Function(T oldWidget, T newWidget);
 
 class ShouldRebuild<T extends Widget> extends StatefulWidget {
-  final WidgetBuilder<T> builder;
+  final T child;
   final ShouldRebuildFunction<T> shouldRebuild;
-  ShouldRebuild({@required this.builder, this.shouldRebuild}):assert((){
-    if(builder == null){
+  ShouldRebuild({@required this.child, this.shouldRebuild}):assert((){
+    if(child == null){
       throw FlutterError.fromParts(
           <DiagnosticsNode>[
             ErrorSummary('ShouldRebuild widget: builder must be not  null')]
@@ -28,7 +26,7 @@ class _ShouldRebuildState<T extends Widget> extends State<ShouldRebuild> {
   T oldWidget;
   @override
   Widget build(BuildContext context) {
-    final T newWidget = widget.builder();
+    final T newWidget = widget.child;
     if (this.oldWidget == null || (widget.shouldRebuild == null ? true : widget.shouldRebuild(oldWidget, newWidget))) {
       this.oldWidget = newWidget;
     }

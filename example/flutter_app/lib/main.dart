@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:should_rebuild_widget/should_rebuild.dart';
+import 'package:should_rebuild/should_rebuild.dart';
 
 void main() => runApp(MyApp());
 
@@ -48,11 +48,9 @@ class _TestState extends State<Test> {
             children: <Widget>[
               ShouldRebuild<Counter>(
                 shouldRebuild: (oldWidget, newWidget) => oldWidget.counter != newWidget.counter,
-                builder: () => Counter(counter: counter,onClick: _incrementCounter,title: 'I am good Counter',),
+                  child: Counter(counter: counter,onClick: _incrementCounter,title: 'I am good Counter',),
               ),
-              Counter(
-                counter: counter,onClick: _incrementCounter,title: 'I am bad Counter',
-              ),
+
               Text('productNum = $productNum',style: TextStyle(fontSize: 22,color: Colors.deepOrange),),
               RaisedButton(
                 onPressed: _incrementProduct,
