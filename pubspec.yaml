@@ -1,8 +1,8 @@
 name: should_rebuild
-description: A new Flutter package project.
+description: A widget can prevent Widget unnecessary rebuild.
 version: 0.0.1
-author:
-homepage:
+author: fantasy525
+homepage: https://github.com/fantasy525/should_rebuild
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

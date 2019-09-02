@@ -1,3 +1,4 @@
-## [0.0.1] - TODO: Add release date.
+# Changelog
 
-* TODO: Describe initial release.
+## Version 0.0.1 (2019-09-02)
+- Initial version

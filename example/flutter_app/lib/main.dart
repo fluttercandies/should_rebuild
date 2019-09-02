@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:should_rebuild_widget/should_rebuild_widget.dart';
+import 'package:should_rebuild_widget/should_rebuild.dart';
 
 void main() => runApp(MyApp());
 

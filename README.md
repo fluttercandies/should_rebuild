@@ -2,7 +2,7 @@
 
 [![Star this Repo](https://img.shields.io/github/stars/fantasy525/should_rebuild)](https://github.com/fantasy525/should_rebuild)
 
-ShouldRebuild is a Widget that can prevent Widget rebuilding.
+A widget can prevent Widget unnecessary rebuild.
 
 ### Add dependency
 ```yaml
