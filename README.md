@@ -14,7 +14,7 @@ dependencies:
 ```dart
 ShouldRebuild<Todo>(
     shouldRebuild: (oldWidget, newWidget) => oldWidget.counter != newWidget.counter,
-    builder: () => Todo(counter: counter,),
+    child: Todo(counter: counter,)
 ),
 ```
 Todo Widget
@@ -32,6 +32,6 @@ class Todo extends StatelessWidget {
 ```
 The Todo widget only rebuild if counter changes
 
-ShouldeRebuild Widget is a generic StatefulWidget,this generic represents the type of Widget returned by the builder method
+ShouldRebuild Widget is a generic StatefulWidget,this generic represents the type of Widget returned by the builder method
 
 
