@@ -1,5 +1,5 @@
 name: should_rebuild
-description: A widget can prevent Child Widget unnecessary rebuild.You can filter whether you need rebuild based on whether the property values received by the old Child Widget and the new Child Widget are equal.(这个widget可以防止它的child发生不必要的rebuild，你可以判断新的Child Widget和旧的Child Widget接收的属性值是否相等来过滤是否需要)
+description: A widget can prevent Child Widget unnecessary rebuild.You can filter whether you need rebuild based on whether the property values received by the old Child Widget and the new Child Widget are equal.
 version: 0.1.0
 author: fantasy525 <1056726491@qq.com>
 homepage: https://github.com/fantasy525/should_rebuild

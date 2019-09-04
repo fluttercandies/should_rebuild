@@ -6,7 +6,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/fluttercandies/should_rebuild)](https://github.com/fluttercandies/should_rebuild/issues)
 [![GitHub forks](https://img.shields.io/github/forks/fluttercandies/should_rebuild)](https://github.com/fluttercandies/should_rebuild/forks)
 
-A widget can prevent Child Widget unnecessary rebuild.You can filter whether you need rebuild based on whether the property values received by the old Child Widget and the new Child Widget are equal.(这个widget可以防止它的child发生不必要的rebuild，你可以判断新的Child Widget和旧的Child Widget接收的属性值是否相等来过滤是否需要rebuild)
+A widget can prevent Child Widget unnecessary rebuild.You can filter whether you need rebuild based on whether the property values received by the old Child Widget and the new Child Widget are equal.
+
+(这个widget可以防止它的child发生不必要的rebuild，你可以判断新的Child Widget和旧的Child Widget接收的属性值是否相等来过滤是否需要rebuild)
 
 ### Add dependency
 ```yaml
