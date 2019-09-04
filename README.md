@@ -2,6 +2,8 @@
 
 [![Star this Repo](https://img.shields.io/github/stars/fantasy525/should_rebuild)](https://github.com/fantasy525/should_rebuild)
 
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)
+
 A widget can prevent Widget unnecessary rebuild.
 
 ### Add dependency
