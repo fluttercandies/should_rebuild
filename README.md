@@ -44,7 +44,7 @@ class Todo extends StatelessWidget {
   }
 }
 ```
-The Todo widget only rebuild if counter changes
+The Todo widget only rebuilds if counter changes
 
 ShouldRebuild Widget is a generic StatefulWidget,this generic represents the type of Widget returned by the builder method
 
