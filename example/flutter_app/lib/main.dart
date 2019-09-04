@@ -48,7 +48,7 @@ class _TestState extends State<Test> {
             children: <Widget>[
               ShouldRebuild<Counter>(
                 shouldRebuild: (oldWidget, newWidget) => oldWidget.counter != newWidget.counter,
-                  child: Counter(counter: counter,onClick: _incrementCounter,title: 'I am good Counter',),
+                child: Counter(counter: counter,onClick: _incrementCounter,title: 'I am good Counter',),
               ),
 
               Text('productNum = $productNum',style: TextStyle(fontSize: 22,color: Colors.deepOrange),),

@@ -7,11 +7,17 @@ typedef ShouldRebuildFunction<T> = bool Function(T oldWidget, T newWidget);
 class ShouldRebuild<T extends Widget> extends StatefulWidget {
   final T child;
   final ShouldRebuildFunction<T> shouldRebuild;
-  ShouldRebuild({@required this.child, this.shouldRebuild}):assert((){
+  ShouldRebuild({@required this.child, @required this.shouldRebuild}):assert((){
     if(child == null){
       throw FlutterError.fromParts(
           <DiagnosticsNode>[
-            ErrorSummary('ShouldRebuild widget: builder must be not  null')]
+            ErrorSummary('ShouldRebuild widget: child must not be  null')]
+      );
+    }
+    else if(shouldRebuild == null){
+      throw FlutterError.fromParts(
+          <DiagnosticsNode>[
+            ErrorSummary('ShouldRebuild widget: shouldRebuild must not be  null')]
       );
     }
     return true;

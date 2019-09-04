@@ -1,4 +1,7 @@
 # Changelog
+## [0.1.2]
+
+* change assert
 
 ## [0.1.1]
 

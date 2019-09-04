@@ -13,7 +13,7 @@ A widget can prevent Child Widget unnecessary rebuild.You can filter whether you
 ### Add dependency
 ```yaml
 dependencies:
-  should_rebuild: 0.1.1
+  should_rebuild: 0.1.2
 ```
 Or
 ```yaml
@@ -47,5 +47,6 @@ class Todo extends StatelessWidget {
 The Todo widget only rebuild if counter changes
 
 ShouldRebuild Widget is a generic StatefulWidget,this generic represents the type of Widget returned by the builder method
+
 
 
