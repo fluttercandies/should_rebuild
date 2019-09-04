@@ -12,7 +12,7 @@ A widget can prevent Widget unnecessary rebuild.
 dependencies:
   should_rebuild:
       git:
-        url: https://github.com/fantasy525/should_rebuild
+        url: https://github.com/fluttercandies/should_rebuild
 ```
 
 ## Super simple to use
