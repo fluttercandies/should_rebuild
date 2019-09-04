@@ -84,7 +84,7 @@ packages:
   should_rebuild:
     dependency: "direct main"
     description:
-      path: "..\\.."
+      path: "../.."
       relative: true
     source: path
     version: "0.0.1"

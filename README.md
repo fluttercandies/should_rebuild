@@ -10,6 +10,11 @@ A widget can prevent Widget unnecessary rebuild.
 ### Add dependency
 ```yaml
 dependencies:
+  should_rebuild: 0.0.1
+```
+Or
+```yaml
+dependencies:
   should_rebuild:
       git:
         url: https://github.com/fluttercandies/should_rebuild
