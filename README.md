@@ -13,7 +13,7 @@ A widget can prevent Child Widget unnecessary rebuild.You can filter whether you
 ### Add dependency
 ```yaml
 dependencies:
-  should_rebuild: 0.1.0
+  should_rebuild: 0.1.1
 ```
 Or
 ```yaml
